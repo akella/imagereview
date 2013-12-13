@@ -62,7 +62,28 @@ $break-large: 1180px;
 	text-shadow: none;
 	color: transparent;
 }
+@mixin hide-text{
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
+@mixin hidetext{
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+}
 %clr{
+	&:before,
+	&:after{
+		content: " ";
+		display: table;
+	}
+	&:after{
+		clear: both;
+	}
+	*zoom: 1;
+}
+@mixin clr{
 	&:before,
 	&:after {
 		content: " ";

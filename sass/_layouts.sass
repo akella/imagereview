@@ -1,10 +1,48 @@
 // default layout
-.l
-	width: 100%
-	display: inline-block
-	.l-col1
-		float: left
-		width: 20%
-	.l-col2
-		float: right
-		width: 70%
+$t: 33px
+$r: 368px
+body,html
+	position: relative
+	height: 100%
+	min-height: 600px
+	min-width: 1000px
+	overflow: hidden
+	background: #2E2F2F 
+.l-main
+	position: absolute
+	top: $t
+	left: 0
+	right: $r
+	bottom: 0
+	background: #333333
+	+transition(all .2s linear)
+	.is-hiddensidebar &
+		right: 0 
+.l-side
+	position: absolute
+	right: 0
+	top: $t
+	bottom: 0
+	width: $r 
+	background: #252525  
+	+transition(all .2s linear)
+	.l-side__toggle
+		position: absolute
+		left: -13px 
+		top: 5px 
+		z-index: 200 
+		+s(hide)
+		cursor: pointer
+		&.is-active
+			+s(show)
+	.is-hiddensidebar &
+		+translate3d($r, 0, 0)
+
+.l-toolbar
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	width: 62px 
+	background: rgba(#000, .8)
+

@@ -6,15 +6,73 @@
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<script src="js/app.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
 </head>
 <body>
-
-<!-- BEGIN  out-->
-<div class="out">
-
+<!-- BEGIN topper -->
+<div class="topper topper_withlogo">
+	<h1 class="topper__logo">Sony</h1>
+	<!-- BEGIN topper__nav -->
+	<nav class="topper__nav">
+		<ul>
+			<li><a href="#">Queue</a></li>
+			<li><a href="#">Video</a></li>
+			<li><a href="#">Audio</a></li>
+			<li><a href="#">Audio ingest</a></li>
+			<li><a href="#">Frame</a></li>
+			<li><a href="#">Match</a></li>
+		</ul>
+	</nav>
+	<!-- END topper__nav -->
+	<!-- BEGIN profile -->
+	<div class="profile">
+		<div class="profile__version">v2.7182818284</div>
+		<div class="profile__feedback"><a href="#">Feedback</a></div>
+		<div class="profile__hotkeys"><a href="#">Hotkeys</a></div>
+		<div class="profile__logout"><a href="#">Logout</a></div>
+		<div class="profile__sessions"><a href="#"><i></i><span>4</span></a></div>
+	</div>
+	<!-- END profile -->
 </div>
-<!-- END out-->
+<!-- END topper -->
+
+<!-- begin l-main  -->
+<div class="l-main">
+	<!-- begin image  -->
+	<div class="image">
+		<div class="image__header">
+			<div class="image__images">Images</div>
+			<div class="image__title"><i class="icon-info"></i>Robocop Final Reviewed Rerere last. v2.tiff</div>
+			<div class="image__notesmarks is-active"><i class="icon-view"></i><span>Notes and marks</span></div>
+		</div>
+		<div class="image__view">
+			<img src="img/pic.jpg" alt="">
+		</div>
+		<div class="image__preview">
+			<div class="image__previewregion"></div>
+			<img src="img/smallpic.jpg" alt="">
+		</div>
+	</div>
+	<!-- end image -->
+
+	<!-- begin l-toolbar  -->
+	<div class="l-toolbar">
+		
+	</div>
+	<!-- end l-toolbar -->
+</div>
+<!-- end l-main -->
+
+
+
+<!-- begin l-side  -->
+<div class="l-side">
+	<div class="l-side__toggle js-togglesidebar"></div>
+	<img src="img/rap.jpg" alt="">
+</div>
+<!-- end l-side -->
+
 
 </body>
 </html>

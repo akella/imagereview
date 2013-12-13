@@ -39,6 +39,12 @@
 // 		font-family: Black
 // BTW these comments will not render into css
 
+=full
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0    
 *
 	margin: 0
 	padding: 0
@@ -65,22 +71,20 @@ body
 // resets
 a img,fieldset
 	border: none
+	
 
-// common styles, these could be attached to any block with "@extend %wyswyg;"
-%wyswyg
-	p
-		margin-bottom: 1em
-	ul,ol
-		margin: 1em 2em
-		list-style: disc
-	ol
-		list-style: decimal
-	blockquote
-		margin: 1em 2em
-	table
-		border-spacing: 0
-		border-collapse: collapse
-		width: 100%
-		td
-			border: 1px solid #ccc
-			padding: 5px
+%button
+	border: 1px solid #000
+	border-radius: 2px
+	@include background-image(linear-gradient(bottom, rgba(0,0,0,.7) 0%, rgba(68,68,68,.7) 25%, rgba(85,85,85,.7) 75%, rgba(85,85,85,.7) 75.24%, rgba(119,119,119,.7) 100%))
+	display: inline-block
+	height: 18px 
+	line-height: 18px
+	color: #cbcbcb
+	font-size: 11px
+	@include text-shadow(0 -1px 1px #000)
+	cursor: pointer
+	padding: 0 6px
+ 
+
+
