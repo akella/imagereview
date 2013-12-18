@@ -1,0 +1,252 @@
+//meta header for all comments
+.conversations
+	overflow: auto
+.conversation
+	padding-left: 10px
+	box-shadow: inset 0 -40px 40px -40px rgba(black, 1)
+	border-bottom: 1px solid rgba(white, 0.2)
+	.comment
+		padding: 13px 0
+	&.conversation_noborder
+		border: none
+
+.comments
+	.comments__meta
+		border-top: 1px solid rgba(white, 0.2)
+		background: rgba(black, 0.3)
+		font-size: 11px
+		@extend %clr
+		+ipad
+			font-size: 13px
+	.comments__sort
+		float: right
+		color: #ccc
+		margin-right: 15px
+		height: 19px
+		line-height: 19px
+		cursor: pointer
+		position: relative
+		z-index: 50
+		+ipad
+			height: 29px
+			line-height: 29px
+
+		i
+			display: inline-block
+			+s(arr-down)
+			margin-left: 8px
+			vertical-align: middle
+		&.is-up
+			i
+				+s(arr-up)
+		&:hover
+			color: #fff
+		.comments__sortways
+			@extend %smalldrop
+			top: 20px
+	.comments__update
+		float: left
+		color: #fff
+		padding-left: 7px
+		height: 18px
+		padding-top: 1px
+		line-height: 19px
+		cursor: pointer
+		vertical-align: middle
+		padding-right: 20px
+		text-shadow: 0 1px 2px rgba(black, 0.6)
+		+ipad
+			line-height: 29px
+			height: 29px
+
+		i
+			display: inline-block
+			margin-right: 6px
+			+s(update)
+			position: relative
+			top: 2px
+		&.is-active
+			+background-image(linear-gradient(left, #517b22 70%, rgba(#517b22, 0)))
+
+// bottom timeline
+.comment
+	font-size: 13px
+	color: #aaaaaa
+	line-height: 1.3
+	position: relative
+	&.comment_tab
+		margin-left: 38px
+		border-top: 1px solid rgba(white, 0.2)
+		box-shadow: 0 -1px 0 rgba(black, 0.5)
+		+ipad
+			margin-left: 0
+
+		&.is-new
+			&:before
+				left: -48px
+	&.is-new
+		&:before
+			position: absolute
+			height: 100%
+			top: 0
+			left: -10px
+			width: 2px
+			background: #45661F
+			content: ' '
+	.comment__frame
+		font-size: 11px
+		color: #777
+		display: inline-block
+		vertical-align: middle
+		margin-left: 3px
+	.comment__published
+		color: #5e5e5e
+		font-size: 11px
+	.comment__meta
+		display: inline-block
+		width: 100%
+		margin-bottom: 3px
+	.comment__av
+		float: left
+		margin-right: 10px
+		img
+			box-shadow: 1px 1px 3px rgba(black, 0.6)
+			display: block
+			margin-bottom: 4px
+	.comment__content
+		@extend %clr
+		margin-right: 10px
+		font-size: 13px
+		p
+			overflow: hidden
+		a
+			color: #ccc
+			text-decoration: underline
+	&.comment_edit .comment__action
+		right: 13px
+		opacity: 1
+	.comment__action
+		position: absolute
+		right: 13px - 10px
+		top: 10px
+		font-size: 11px
+		-webkit-transition: all .2s
+		opacity: 0
+		+ipad
+			display: none
+
+		a
+			color: #999
+			text-decoration: none
+			padding-right: 20px
+			position: relative
+			white-space: nowrap
+			text-align: right
+			display: block
+			margin-bottom: 3px
+			i
+				position: absolute
+				right: 0
+				top: -1px
+				display: inline-block
+		.comment__actionshare
+			i
+				+s(share)
+				opacity: .4
+			&.is-active
+				i
+					opacity: 1
+		.comment__actionedit
+			i
+				+s(edit)
+				opacity: .4
+			&.is-active
+				i
+					opacity: 1
+	&:hover
+		.comment__action
+			opacity: 1
+			right: 13px
+	.comment__thumb
+		float: left
+		margin-right: 10px
+		border: 1px solid #333
+		img
+			display: block
+	.comment__author
+		color: #ccc
+		font-size: 11px
+		vertical-align: middle
+	&.comment_add
+		overflow: hidden
+		padding-right: 10px
+		padding-bottom: 11px
+		.comment__av
+			img
+				margin-bottom: 0
+			+ipad
+				margin-right: -2px
+				position: relative
+				z-index: 3
+		.comment__addcomment
+			float: right
+			margin-left: 10px
+			@extend %button-alt
+			border-radius: 3px
+			position: relative
+			top: 2px
+			i
+				display: inline-block
+				position: relative
+				top: 3px
+				+s(addcomment)
+		.comment__input
+			overflow: hidden
+			input,textarea
+				@extend %input
+	.comment__like
+		text-decoration: underline
+		display: inline-block
+		padding-left: 20px
+		position: relative
+		cursor: pointer
+		margin-top: 2px
+		i
+			+s(like)
+			display: inline-block
+			position: absolute
+			left: 0
+			top: 1px
+	
+.commentedit
+	.commentedit__input
+		@extend %input
+	.commentedit__save
+		@extend %button
+		margin-right: 5px
+		i
+			margin-right: 5px
+			display: inline-block
+			vertical-align: middle
+			+s(savecomment)
+	.commentedit__cancel
+		display: inline-block
+		color: #ccc
+		text-decoration: underline
+		cursor: pointer
+		font-size: 11px
+	.commentedit__delete
+		float: right
+		font-size: 10px
+		color: #6d6d6d
+		text-decoration: underline
+		cursor: pointer
+		position: relative
+		line-height: 1
+		margin-top: 10px
+		&:before
+			content: ' '
+			position: absolute
+			left: -10px
+			top: 1px
+			+s(x)

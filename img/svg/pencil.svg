@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>pencil</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9F9F9F" offset="0%"></stop>
+            <stop stop-color="#7E7E7E" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M10.8278584,3.20291515 L2.01269531,12.010498 L2.01269531,15.9811401 L6.00689697,15.9811401 L14.8117136,7.18677034 L10.8278584,3.20291515 L10.8278584,3.20291515 Z M12.2972686,1.73476857 L14.0081177,0.0253906268 L17.9927979,4.00946045 L16.2813638,5.71886385 L12.2972686,1.73476857 L12.2972686,1.73476857 Z M4.00671386,12.003418 L6.00671386,14.003418 L5.02954107,15.0338745 L4.00526027,15.0338745 L4.00526027,14.003418 L2.97533003,14.003418 L2.97533003,12.9876627 L4.00671386,12.003418 Z" id="Path-1-copy" fill="url(#linearGradient-1)" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

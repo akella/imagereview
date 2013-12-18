@@ -58,7 +58,50 @@
 
 	<!-- begin l-toolbar  -->
 	<div class="l-toolbar">
-		
+		<!-- BEGIN  toolbar-->
+		<div class="toolbar">
+			<div class="toolbar__undo"><i></i>Undo</div>
+			<div class="toolbar__wipe"><i></i>Wipe</div>
+			<div class="toolbar__sep"></div>
+			<div class="toolbar__pencil"><i></i></div>
+			<div class="toolbar__line"><i></i></div>
+			<div class="toolbar__square"><i></i></div>
+			<div class="toolbar__circle"><i></i></div>
+			<div class="toolbar__arrow"><i></i></div>
+			<div class="toolbar__crop"><i></i></div>
+			<div class="toolbar__move"><i></i></div>
+			<div class="toolbar__sep"><i></i></div>
+			<div class="toolbar__colors">
+				<i class="toolbar__color is-active" style="background:#7fc430"></i> <i class="icon-drop"></i>
+				<div class="toolbar__drop">
+					<div class="toolbar__color" style="background:#7fc430;"></div>
+					<div class="toolbar__color" style="background:#e9008c;"></div>
+					<div class="toolbar__color" style="background:#0074ba;"></div>
+					<div class="toolbar__color" style="background:#79e6d2;"></div>
+					<div class="toolbar__color" style="background:#ffffff;"></div>
+					<div class="toolbar__color" style="background:#000000;"></div>
+				</div>
+			</div>
+			<div class="toolbar__brushes">
+				<i class="toolbar__brush toolbar__brush1 is-active"></i> <i class="icon-drop"></i>
+				
+				<div class="toolbar__drop">
+					<div class="toolbar__brush toolbar__brush1"></div>
+					<div class="toolbar__brush toolbar__brush2"></div>
+					<div class="toolbar__brush toolbar__brush3"></div>
+					<div class="toolbar__brush toolbar__brush4"></div>
+					<div class="toolbar__brush toolbar__brush5"></div>
+					<div class="toolbar__brush toolbar__brush6"></div>
+				</div>
+			</div>
+			<div class="toolbar__sep"></div>
+			<div class="toolbar__zoom">
+				<div class="toolbar__zoomin"></div>
+				<div class="toolbar__zoomrange"><input type="range" class="vertical"></div>
+				<div class="toolbar__zoomout"></div>
+			</div>
+		</div>
+		<!-- END toolbar-->
 	</div>
 	<!-- end l-toolbar -->
 </div>
@@ -69,7 +112,109 @@
 <!-- begin l-side  -->
 <div class="l-side">
 	<div class="l-side__toggle js-togglesidebar"></div>
-	<img src="img/rap.jpg" alt="">
+		<!-- BEGIN  conversation-->
+		<div class="conversations">
+		<!-- BEGIN  conversation-->
+		<div class="conversation">
+			
+			<!-- begin comment -->
+			<div class="comment">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<div class="comment__thumb"><img src="img/thumb.jpg" alt=""></div>
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			
+
+			<!-- BEGIN  comment comment_tab-->
+			<div class="comment comment_tab comment_add">
+				<div class="comment__av"><img src="img/av.png" alt=""></div>
+				<div class="comment__addcomment"><i></i></div>
+				<div class="comment__input"><textarea>Add a reply…</textarea></div>
+				
+			</div>
+			<!-- END comment comment_tab-->
+			
+		</div>
+		<!-- END conversation-->
+		<!-- BEGIN  conversation-->
+		<div class="conversation">
+			
+			<!-- begin comment -->
+			<div class="comment is-new">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+					<div class="comment__like"><i></i> Like</div>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+				
+			</div>
+			<!-- end comment -->
+			
+			<!-- begin comment -->
+			<div class="comment comment_tab is-new">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-online"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			<!-- begin comment -->
+			<div class="comment comment_tab">
+				<div class="comment__meta">
+					<div class="comment__av"><img src="img/av.png" alt=""></div>
+					<span class="comment__author">Rainbow Dash</span> <i class="icon-offline"></i> <div class="comment__frame">on Frame 4235</div>
+					<div class="comment__published">Feb 8, 2013 15:38</div>
+				</div>
+				<div class="comment__content">
+					<p>I actually like almost anything. <br>I just think it needs to be cooler. Yeah, the better! The cooler!</p>
+				</div>
+				<div class="comment__action">
+					<a href="#" class="comment__actionshare">Share<i></i></a>
+					<a href="#" class="comment__actionedit">Edit or Delete<i></i></a>
+				</div>
+			</div>
+			<!-- end comment -->
+			<!-- BEGIN  comment comment_tab-->
+			<div class="comment comment_tab comment_add">
+				<div class="comment__av"><img src="img/av.png" alt=""></div>
+				<div class="comment__addcomment"><i></i></div>
+				<div class="comment__input"><textarea>Add a reply…</textarea></div>
+				
+			</div>
+			<!-- END comment comment_tab-->
+			
+		</div>
+		<!-- END conversation-->
+		</div>
+		<!-- END conversations-->
+
 </div>
 <!-- end l-side -->
 

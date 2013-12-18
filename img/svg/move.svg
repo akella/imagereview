@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A3A3A3" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M15.0178223,4 L8.01782227,4 L11.5178223,0 L15.0178223,4 Z M17.0356445,13.0178223 L17.0356445,6.01782227 L21.0356445,9.51782227 L17.0356445,13.0178223 Z M8.01782227,15.0356445 L15.0178223,15.0356445 L11.5178223,19.0356445 L8.01782227,15.0356445 Z M6,6.01782227 L6,13.0178223 L2,9.51782227 L6,6.01782227 Z M13.0178223,9.5 C13.0178223,8.67157283 12.3462494,8 11.5178223,8 C10.6893951,8 10.0178223,8.67157283 10.0178223,9.5 C10.0178223,10.3284272 10.6893951,11 11.5178223,11 C12.3462494,11 13.0178223,10.3284272 13.0178223,9.5 Z" id="Triangle-1-copy" fill="url(#linearGradient-1)" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -4,4 +4,8 @@ $(document).ready(function() {
 		$(this).toggleClass('is-active');
 		return false;
 	});
+
+	$('.toolbar__brushes,.toolbar__colors').click(function(event) {
+		$(this).children('.toolbar__drop').toggleClass('is-visible');
+	});
 });
