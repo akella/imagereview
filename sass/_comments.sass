@@ -3,8 +3,8 @@
 	overflow: auto
 .conversation
 	padding-left: 10px
-	box-shadow: inset 0 -40px 40px -40px rgba(black, 1)
-	border-bottom: 1px solid rgba(white, 0.2)
+	//box-shadow: inset 0 -40px 40px -40px rgba(black, 1)
+	border-bottom: 3px solid #4A4A4A
 	.comment
 		padding: 13px 0
 	&.conversation_noborder
@@ -67,7 +67,16 @@
 			top: 2px
 		&.is-active
 			+background-image(linear-gradient(left, #517b22 70%, rgba(#517b22, 0)))
-
+.icon-offline,.icon-online
+	height: 6px 
+	width: 6px 
+	vertical-align: middle
+	display: inline-block
+	border-radius: 10px
+	background: #90C352
+	margin-left: 2px 
+.icon-offline
+	background: #898989 
 // bottom timeline
 .comment
 	font-size: 13px
@@ -76,8 +85,9 @@
 	position: relative
 	&.comment_tab
 		margin-left: 38px
-		border-top: 1px solid rgba(white, 0.2)
-		box-shadow: 0 -1px 0 rgba(black, 0.5)
+		border-top: 1px solid #494949
+		margin-right: 8px 
+		//box-shadow: 0 -1px 0 rgba(black, 0.5)
 		+ipad
 			margin-left: 0
 
@@ -93,6 +103,26 @@
 			width: 2px
 			background: #45661F
 			content: ' '
+	.comment__showmore
+		color: #999999
+		cursor: pointer
+		margin-top: 4px  
+		position: relative
+		&:before
+			position: absolute
+			top: -28px 
+			width: 300px 
+			height: 24px 
+			left: -10px  
+			content: ' '
+			+g(rgba(#262626,0), #262626)
+		i
+			display: inline-block
+			+s(plus)
+			margin-right: 4px 
+			vertical-align: middle
+			position: relative
+			top: -2px 
 	.comment__frame
 		font-size: 11px
 		color: #777
@@ -184,10 +214,6 @@
 		.comment__av
 			img
 				margin-bottom: 0
-			+ipad
-				margin-right: -2px
-				position: relative
-				z-index: 3
 		.comment__addcomment
 			float: right
 			margin-left: 10px
@@ -204,6 +230,17 @@
 			overflow: hidden
 			input,textarea
 				@extend %input
+		.comment__addbutton
+			@extend %button
+			height: 23px 
+			line-height: 23px
+			padding-right: 9px  
+			i
+				display: inline-block
+				position: relative
+				top: 3px
+				+s(addcomment)
+				margin-right: 5px 
 	.comment__like
 		text-decoration: underline
 		display: inline-block
