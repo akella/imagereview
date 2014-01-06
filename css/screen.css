@@ -44,7 +44,7 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .l-main { position: absolute; top: 33px; left: 0; right: 368px; bottom: 0; background: #333333; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .is-hiddensidebar .l-main { right: 0; }
 
-.l-side { position: absolute; right: 0; top: 33px; bottom: 0; width: 368px; background: #252525 url(../img/noise.jpg) repeat 0 0; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 100; overflow: auto; }
+.l-side { position: absolute; right: 0; top: 33px; bottom: 0; width: 368px; background: #252525; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 100; overflow: auto; }
 .l-side .l-side__toggle { position: absolute; left: -13px; top: 5px; z-index: 200; background: url('../img/icons-s699aa60f18.png') 0 -255px no-repeat; width: 13px; height: 24px; cursor: pointer; }
 .l-side .l-side__toggle.is-active { background: url('../img/icons-s699aa60f18.png') 0 -289px no-repeat; width: 13px; height: 24px; }
 .is-hiddensidebar .l-side { -webkit-transform: translate3d(368px, 0, 0); -moz-transform: translate3d(368px, 0, 0); -ms-transform: translate3d(368px, 0, 0); -o-transform: translate3d(368px, 0, 0); transform: translate3d(368px, 0, 0); }
