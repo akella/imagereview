@@ -143,12 +143,15 @@
 			box-shadow: 1px 1px 3px rgba(black, 0.6)
 			display: block
 			margin-bottom: 4px
+			max-width: 30px
+			max-height: 30px
 	.comment__content
 		@extend %clr
 		margin-right: 10px
 		font-size: 13px
 		p
 			overflow: hidden
+			word-wrap: break-word
 		a
 			color: #ccc
 			text-decoration: underline
@@ -201,8 +204,18 @@
 		float: left
 		margin-right: 10px
 		border: 1px solid #333
+		max-width: 30px 
+		max-height: 30px 
+		position: relative
 		img
 			display: block
+			position: absolute
+			left: 0
+			top: 0  
+		.comment__thumbannotation, .annotation
+			position: absolute
+			left: 0
+			top: 0  
 	.comment__author
 		color: #ccc
 		font-size: 11px

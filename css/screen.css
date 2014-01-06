@@ -52,9 +52,11 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .l-toolbar { position: absolute; top: 0; right: 0; bottom: 0; width: 62px; background: black; }
 
 .image { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; text-align: center; }
-.image .image__preview { position: absolute; left: 0; bottom: 0; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+.image .image__view.is-cangrab { cursor: -webkit-grab; }
+.image .image__view.is-grabbing { cursor: -webkit-grabbing; }
+.image .image__preview { position: absolute; left: 0; bottom: 0; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); max-width: 150px; max-height: 200px; }
 .image .image__preview img { display: block; }
-.image .image__preview .image__previewregion { border: 2px solid #fec92e; width: 50px; height: 60px; position: absolute; left: 20px; top: 20px; cursor: move; }
+.image .image__preview .image__previewregion { border: 2px solid #fec92e; width: 50px; height: 60px; position: absolute; left: 20px; top: 20px; cursor: move; box-sizing: border-box; }
 .image .image__preview .image__previewregion:hover { background: rgba(255, 255, 255, 0.2); }
 .image .image__header { position: absolute; top: 0; left: 0; right: 0; padding: 5px; background: #2d2d2d; height: 22px; border-bottom: 1px solid #464646; z-index: 100; text-align: left; }
 .image .image__notesmarks { position: absolute; right: 20px; top: 0; padding-top: 8px; color: #999999; cursor: pointer; line-height: 1; }
@@ -146,9 +148,9 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .comment .comment__published { color: #5e5e5e; font-size: 11px; }
 .comment .comment__meta { display: inline-block; width: 100%; margin-bottom: 3px; }
 .comment .comment__av { float: left; margin-right: 10px; }
-.comment .comment__av img { box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); display: block; margin-bottom: 4px; }
+.comment .comment__av img { box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); display: block; margin-bottom: 4px; max-width: 30px; max-height: 30px; }
 .comment .comment__content { margin-right: 10px; font-size: 13px; }
-.comment .comment__content p { overflow: hidden; }
+.comment .comment__content p { overflow: hidden; word-wrap: break-word; }
 .comment .comment__content a { color: #cccccc; text-decoration: underline; }
 .comment.comment_edit .comment__action { right: 13px; opacity: 1; }
 .comment .comment__action { position: absolute; right: 3px; top: 10px; font-size: 11px; -webkit-transition: all 0.2s; opacity: 0; }
@@ -160,8 +162,9 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .comment .comment__action .comment__actionedit i { background: url('../img/icons-s699aa60f18.png') 0 -717px no-repeat; width: 14px; height: 12px; opacity: 0.4; }
 .comment .comment__action .comment__actionedit.is-active i { opacity: 1; }
 .comment:hover .comment__action { opacity: 1; right: 13px; }
-.comment .comment__thumb { float: left; margin-right: 10px; border: 1px solid #333333; }
-.comment .comment__thumb img { display: block; }
+.comment .comment__thumb { float: left; margin-right: 10px; border: 1px solid #333333; max-width: 30px; max-height: 30px; position: relative; }
+.comment .comment__thumb img { display: block; position: absolute; left: 0; top: 0; }
+.comment .comment__thumb .comment__thumbannotation, .comment .comment__thumb .annotation { position: absolute; left: 0; top: 0; }
 .comment .comment__author { color: #cccccc; font-size: 11px; vertical-align: middle; }
 .comment.comment_add { overflow: hidden; padding-right: 10px; padding-bottom: 11px; }
 .comment.comment_add .comment__av img { margin-bottom: 0; }

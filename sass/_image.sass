@@ -2,11 +2,18 @@
 	+full
 	overflow: hidden
 	text-align: center
+	.image__view
+		&.is-cangrab
+			cursor: -webkit-grab
+		&.is-grabbing
+			cursor: -webkit-grabbing
 	.image__preview
 		position: absolute
 		left: 0
 		bottom: 0
 		+box-shadow(0 0 10px rgba(#000, .5))
+		max-width: 150px 
+		max-height: 200px 
 		img
 			display: block
 		.image__previewregion
@@ -17,6 +24,7 @@
 			left: 20px 
 			top: 20px 
 			cursor: move
+			box-sizing: border-box
 			&:hover
 				background: rgba(#fff, .2) 
 	.image__header
