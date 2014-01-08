@@ -16,6 +16,9 @@
 		border-radius: 4px
 		margin: 0 3px 5px 3px 
 		cursor: pointer
+		&.is-disabled
+			opacity: .5
+			cursor: default 
 		i
 			display: inline-block
 			margin-right: 2px 
@@ -26,6 +29,7 @@
 		i
 			+svg(wipe, 10, 11)
 	.toolbar__undo
+		white-space: nowrap
 		i
 			+svg(undo, 12, 11)
 	@each $s in pencil,line, square, circle,arrow,crop,move,zoom
