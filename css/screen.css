@@ -13,7 +13,7 @@ body { font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; lin
 
 a img, fieldset { border: none; }
 
-.image .image__images, .comment.comment_add .comment__addbutton, .commentedit .commentedit__save { border: 1px solid black; border-radius: 2px; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(25%, rgba(68, 68, 68, 0.7)), color-stop(75%, rgba(85, 85, 85, 0.7)), color-stop(75.24%, rgba(85, 85, 85, 0.7)), color-stop(100%, rgba(119, 119, 119, 0.7))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); display: inline-block; height: 18px; line-height: 18px; color: #cbcbcb; font-size: 11px; text-shadow: 0 -1px 1px black; cursor: pointer; padding: 0 6px; }
+.image .image__images, .comment.comment_add .comment__addbutton, .commentedit .commentedit__save, .markall { border: 1px solid black; border-radius: 2px; background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(0, 0, 0, 0.2)), color-stop(25%, rgba(68, 68, 68, 0.7)), color-stop(75%, rgba(85, 85, 85, 0.7)), color-stop(75.24%, rgba(85, 85, 85, 0.7)), color-stop(100%, rgba(119, 119, 119, 0.7))); background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(68, 68, 68, 0.7) 25%, rgba(85, 85, 85, 0.7) 75%, rgba(85, 85, 85, 0.7) 75.24%, rgba(119, 119, 119, 0.7) 100%); display: inline-block; height: 18px; line-height: 18px; color: #cbcbcb; font-size: 11px; text-shadow: 0 -1px 1px black; cursor: pointer; padding: 0 6px; }
 
 .comments .comments__meta, .comment .comment__content { *zoom: 1; }
 .comments .comments__meta:before, .comment .comment__content:before, .comments .comments__meta:after, .comment .comment__content:after { content: " "; display: table; }
@@ -165,7 +165,7 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .comment .comment__action .comment__actionedit i { background: url('../img/icons-s699aa60f18.png') 0 -717px no-repeat; width: 14px; height: 12px; opacity: 0.4; }
 .comment .comment__action .comment__actionedit.is-active i { opacity: 1; }
 .comment:hover .comment__action { opacity: 1; right: 13px; }
-.comment .comment__thumb { float: left; margin-right: 10px; border: 1px solid #333333; max-width: 30px; max-height: 30px; position: relative; }
+.comment .comment__thumb { float: left; margin-right: 10px; border: 1px solid #333333; width: 55px; max-height: 30px; position: relative; }
 .comment .comment__thumb img { display: block; position: absolute; left: 0; top: 0; }
 .comment .comment__thumb .comment__thumbannotation, .comment .comment__thumb .annotation { position: absolute; left: 0; top: 0; }
 .comment .comment__author { color: #cccccc; font-size: 11px; vertical-align: middle; }
@@ -184,3 +184,5 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .commentedit .commentedit__cancel { display: inline-block; color: #cccccc; text-decoration: underline; cursor: pointer; font-size: 11px; }
 .commentedit .commentedit__delete { float: right; font-size: 10px; color: #6d6d6d; text-decoration: underline; cursor: pointer; position: relative; line-height: 1; margin-top: 10px; }
 .commentedit .commentedit__delete:before { content: " "; position: absolute; left: -10px; top: 1px; background: url('../img/icons-s699aa60f18.png') 0 -187px no-repeat; width: 6px; height: 6px; }
+
+.markall { text-decoration: none; margin: 10px; display: block; text-align: center; font-size: 11px; }
