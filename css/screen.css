@@ -99,10 +99,11 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .toolbar .toolbar__color, .toolbar .toolbar__brush { height: 16px; display: block; margin-bottom: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .toolbar .toolbar__color:last-child, .toolbar .toolbar__brush:last-child { margin-bottom: 0; }
 .toolbar .toolbar__color:hover, .toolbar .toolbar__brush:hover { border: 1px solid black; }
-.toolbar .toolbar__color.is-active, .toolbar .is-active.toolbar__brush { width: 32px !important; height: 16px; position: absolute; top: 5px; }
+.toolbar .toolbar__color.is-active, .toolbar .is-active.toolbar__brush { width: 32px !important; height: 16px; position: absolute; top: 5px; box-shadow: 0 0 0 1px #9c9c9c; }
 .toolbar .toolbar__color.is-active:hover, .toolbar .is-active.toolbar__brush:hover { border: none; }
 .toolbar .toolbar__brush:hover { border: none; background-color: rgba(255, 255, 255, 0.3); width: 32px; }
-.toolbar .toolbar__brush.is-active:hover { background-color: transparent; }
+.toolbar .toolbar__brush.is-active { box-shadow: none; }
+.toolbar .toolbar__brush.is-active:hover { background-color: transparent; box-shadow: none; }
 .toolbar .toolbar__brush.toolbar__brush1 { background: url('../img/icons-s699aa60f18.png') 0 -323px no-repeat; width: 75px; height: 16px; }
 .toolbar .toolbar__brush.toolbar__brush2 { background: url('../img/icons-s699aa60f18.png') 0 -399px no-repeat; width: 75px; height: 5px; }
 .toolbar .toolbar__brush.toolbar__brush3 { background: url('../img/icons-s699aa60f18.png') 0 -349px no-repeat; width: 75px; height: 16px; }

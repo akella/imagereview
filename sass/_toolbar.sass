@@ -83,6 +83,7 @@
 			top: 27px
 			z-index: 10
 
+		
 	.toolbar__color
 		height: 16px
 		display: block
@@ -99,6 +100,7 @@
 			position: absolute
 			//left: 9px
 			top: 5px
+			box-shadow: 0 0 0 1px #9C9C9C
 			&:hover
 				border: none
 
@@ -108,8 +110,11 @@
 			border: none
 			background-color: rgba(white, 0.3)
 			width: 32px 
+		&.is-active
+			box-shadow: none
 		&.is-active:hover
 			background-color: transparent
+			box-shadow: none
 
 		$i: 1
 		@while $i < 7
