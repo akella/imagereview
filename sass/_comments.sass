@@ -224,16 +224,23 @@
 		overflow: hidden
 		padding-right: 10px
 		padding-bottom: 11px
+		border-bottom: 3px solid #4A4A4A 
+		padding-bottom: 10px 
+		padding-top: 10px
+		margin-left: -10px 
+		padding-left: 10px 
 		.comment__av
 			img
 				margin-bottom: 0
 		.comment__addcomment
 			float: right
 			margin-left: 10px
-			@extend %button-alt
+			@extend %button
 			border-radius: 3px
 			position: relative
 			top: 2px
+			padding-top: 3px  
+			padding-bottom: 3px 
 			i
 				display: inline-block
 				position: relative
@@ -242,18 +249,25 @@
 		.comment__input
 			overflow: hidden
 			input,textarea
-				@extend %input
-		.comment__addbutton
-			@extend %button
-			height: 23px 
-			line-height: 23px
-			padding-right: 9px  
-			i
-				display: inline-block
-				position: relative
-				top: 3px
-				+s(addcomment)
-				margin-right: 5px 
+				background: #EAEAEA
+				height: 30px  
+				padding: 0 10px
+				padding-top: 7px 
+				+box-shadow(inset 2px 2px 4px rgba(#000, .3))
+				border: 1px solid #BBB 
+				width: 265px 
+				+box-sizing(border-box)
+	.comment__addbutton
+		@extend %button
+		height: 23px 
+		line-height: 23px
+		padding-right: 9px  
+		i
+			display: inline-block
+			position: relative
+			top: 3px
+			+s(addcomment)
+			margin-right: 5px 
 	.comment__like
 		text-decoration: underline
 		display: inline-block
