@@ -268,12 +268,12 @@
 			top: 3px
 			+s(addcomment)
 			margin-right: 5px 
-	.comment__like
-		text-decoration: underline
+	.comment__like,.comment__dislike
 		display: inline-block
 		padding-left: 20px
 		position: relative
-		cursor: pointer
+		cursor: default
+		text-decoration: none
 		margin-top: 2px
 		i
 			+s(like)
@@ -281,6 +281,9 @@
 			position: absolute
 			left: 0
 			top: 1px
+	.comment__dislike
+		i
+			+s(dislike)
 	
 .commentedit
 	.commentedit__input
