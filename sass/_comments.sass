@@ -1,6 +1,15 @@
 //meta header for all comments
 .conversations
 	overflow: auto
+	.conversations__top
+		border-bottom: 1px solid #4A4A4A
+		position: relative 
+		margin: 0 10px 
+		min-height: 20px 
+		text-shadow: 0 -1px 1px rgba(#000, .5)  
+		font-size: 11px 
+		color: #8C8C8C
+		+clr
 .conversation
 	padding-left: 10px
 	//box-shadow: inset 0 -40px 40px -40px rgba(black, 1)
@@ -9,7 +18,41 @@
 		padding: 13px 0
 	&.conversation_noborder
 		border: none
-
+.sort
+	float: left
+	position: relative
+	font-size: 10px 
+	
+	
+	select
+		position: absolute
+		-webkit-appearance: none
+		opacity: 0
+		top: 0 
+		width: 100%  
+	i
+		display: inline-block
+		+s(select)
+		vertical-align: middle
+.togglesearch
+	position: absolute
+	right: 0
+	bottom: 0
+	padding: 3px 
+	i
+		+s(togglesearch)
+		display: inline-block
+		margin-right: 2px 
+		position: relative
+		top: 2px 
+.newcomments
+	position: absolute
+	left: 50%
+	bottom: 0
+	padding: 4px    
+	margin-left: -20px 
+	&.is-active
+		color: #fff 
 .comments
 	.comments__meta
 		border-top: 1px solid rgba(white, 0.2)
