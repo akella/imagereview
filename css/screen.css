@@ -135,7 +135,8 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .togglesearch { position: absolute; right: 0; bottom: 0; padding: 3px; }
 .togglesearch i { background: url('../img/icons-s9151a691e8.png') 0 -125px no-repeat; width: 13px; height: 11px; display: inline-block; margin-right: 2px; position: relative; top: 2px; }
 
-.newcomments { position: absolute; left: 50%; bottom: 0; padding: 4px; margin-left: -20px; }
+.newcomments { position: absolute; left: 50%; bottom: 0; padding: 4px; margin-left: -20px; text-shadow: 0 1px 1px black; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #1c7a1e)); background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), #1c7a1e); background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), #1c7a1e); background-image: -o-linear-gradient(rgba(0, 0, 0, 0), #1c7a1e); background-image: linear-gradient(rgba(0, 0, 0, 0), #1c7a1e); font-size: 10px; }
+.newcomments span { display: inline-block; vertical-align: middle; position: relative; top: -1px; }
 .newcomments.is-active { color: white; }
 
 .comments .comments__meta { border-top: 1px solid rgba(255, 255, 255, 0.2); background: rgba(0, 0, 0, 0.3); font-size: 11px; }
