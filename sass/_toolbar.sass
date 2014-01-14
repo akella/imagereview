@@ -36,10 +36,13 @@
 		.toolbar__#{$s}
 			display: block
 			margin-bottom: 15px 
+			opacity: .6 
 			i
 				+s(#{$s})
 				cursor: pointer
 				display: inline-block
+			&:hover,&.is-active
+				opacity: 1 
 	.toolbar__pencil
 		margin-bottom: 5px 
 
