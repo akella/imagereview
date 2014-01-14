@@ -188,6 +188,7 @@ body, html { position: relative; height: 100%; min-height: 600px; min-width: 100
 .comment .comment__thumb .comment__thumbannotation, .comment .comment__thumb .annotation { position: absolute; left: 0; top: 0; }
 .comment .comment__author { color: #cccccc; font-size: 11px; vertical-align: middle; }
 .comment.comment_add { overflow: hidden; padding-right: 10px; padding-bottom: 11px; border-bottom: 3px solid #4a4a4a; padding-bottom: 10px; padding-top: 10px; margin-left: -10px; padding-left: 10px; }
+.comment.comment_add.comment_tab { margin-left: 38px; }
 .comment.comment_add .comment__av img { margin-bottom: 0; }
 .comment.comment_add .comment__addcomment { float: right; margin-left: 10px; border-radius: 3px; position: relative; top: 2px; padding-top: 3px; padding-bottom: 3px; }
 .comment.comment_add .comment__addcomment i { display: inline-block; position: relative; top: 3px; background: url('../img/icons-s9151a691e8.png') 0 -396px no-repeat; width: 15px; height: 14px; }
