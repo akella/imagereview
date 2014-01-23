@@ -8,4 +8,9 @@ $(document).ready(function() {
 	$('.toolbar__brushes,.toolbar__colors').click(function(event) {
 		$(this).children('.toolbar__drop').toggleClass('is-visible');
 	});
+
+
+	$('.togglesearch, .topsearch__cancel').click(function(event) {
+		$('.topsearch').toggleClass('is-visible')
+	});
 });

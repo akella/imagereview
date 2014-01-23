@@ -42,12 +42,45 @@
 	right: 0
 	bottom: 0
 	padding: 3px 
+	cursor: pointer
 	i
 		+s(togglesearch)
 		display: inline-block
 		margin-right: 2px 
 		position: relative
 		top: 2px 
+.topsearch
+	position: absolute
+	top: 0
+	background: #262626
+	padding: 0 8px
+	right: 0
+	left: 0
+	top: -50px 
+	z-index: -1 
+	padding-bottom: 20px 
+	+transition(all .2s ease-in-out)
+	&.is-visible
+		z-index: 1 
+		opacity: 1
+		top: 0  
+	.topsearch__input
+		width: 100%
+		+box-sizing(border-box) 
+		border-radius: 10px
+		background: #858585 
+		border-style: none
+		padding: 4px  10px
+		+box-shadow(inset 3px 3px 5px rgba(#000, .3))
+		&:focus
+			outline: none
+	.topsearch__cancel	
+		position: absolute
+		bottom: 4px 
+		right: 10px 
+		color: #999999
+		text-decoration: none
+		text-shadow: 0 -1px 1px rgba(#000,.3)
 .newcomments
 	position: absolute
 	left: 50%
