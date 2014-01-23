@@ -310,16 +310,17 @@
 		.comment__thumbannotation, .annotation
 			position: absolute
 			left: 0
-			top: 0  
+			top: 0   
 	.comment__author
 		color: #ccc
 		font-size: 11px
 		vertical-align: middle
+	.l-side__top &
+		border-bottom: 3px solid #4A4A4A 
 	&.comment_add
 		overflow: hidden
 		padding-right: 10px
 		padding-bottom: 11px
-		border-bottom: 3px solid #4A4A4A 
 		padding-bottom: 10px 
 		padding-top: 10px
 		margin-left: -10px 
@@ -356,6 +357,7 @@
 				border: 1px solid #BBB 
 				width: 265px 
 				+box-sizing(border-box)
+				resize: none
 	.comment__addbutton
 		@extend %button
 		height: 23px 
