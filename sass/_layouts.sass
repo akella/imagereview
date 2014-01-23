@@ -18,6 +18,8 @@ body,html
 	+transition(all .2s linear)
 	.is-hiddensidebar &
 		right: 0 
+	.is-versions &
+		left: 295px 
 .l-side
 	position: absolute
 	right: 0
@@ -56,7 +58,17 @@ body,html
 		left: 0
 		top: 65px + 12px   
 		overflow: auto 
-
+.l-versions
+	position: absolute
+	top: $t
+	bottom: 0
+	left: 0 
+	width: 295px  
+	background: #262626 
+	+transition(all .2s linear)
+	+translate3d(-295px, 0, 0)
+	.is-versions &
+		+translate3d(0, 0, 0)
 .l-toolbar
 	position: absolute
 	top: 0

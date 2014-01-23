@@ -13,4 +13,8 @@ $(document).ready(function() {
 	$('.togglesearch, .topsearch__cancel').click(function(event) {
 		$('.topsearch').toggleClass('is-visible')
 	});
+
+	$('.image__images').click(function(event) {
+		$('body').toggleClass('is-versions');
+	});
 });
