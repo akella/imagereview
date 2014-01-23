@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$('.topsearch').toggleClass('is-visible')
 	});
 
-	$('.image__images').click(function(event) {
+	$('.js-toggleversions').click(function(event) {
 		$('body').toggleClass('is-versions');
 	});
 });
